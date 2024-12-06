@@ -82,7 +82,7 @@ The system is represented using matrices:
    ```
 
 4. View the output plots for:
-   - Pendulum angle (\(\alpha\)) and arm angle (\(\theta\)).
+   - Pendulum angle (\(\alpha\)\) and arm angle (\(\theta\)\).
    - Control input (\(u\)).
    - Reference tracking performance.
   
