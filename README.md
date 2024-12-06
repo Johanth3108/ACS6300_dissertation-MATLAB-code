@@ -1,6 +1,4 @@
-# ACS6300_dissertation MATLAB code
-
-# LQR and MPC Controllers for Furuta Pendulum
+# ACS6300_dissertation MATLAB code for LQR and MPC Controllers for Furuta Pendulum
 
 This repository contains MATLAB implementations of two control strategies, **Linear Quadratic Regulator (LQR)** and **Model Predictive Control (MPC)**, to stabilize and control a Furuta pendulum. The controllers are designed to minimize cost functions while achieving reference tracking. Both simulations demonstrate the pendulum's dynamic response and control inputs.
 
@@ -53,6 +51,10 @@ The system is represented using matrices:
     - Predicted and actual trajectories for pendulum and arm angles.
     - Control effort (\(u\)).
     - Comparison with reference trajectories.
+    - 
+### 3. `plot_comparison_graphs.m`
+- Plots the comparitive graphs of LQR and MPC.
+- Shows the pendulum angle and arm angle in plots.
 
 ---
 
@@ -83,7 +85,14 @@ The system is represented using matrices:
    - Pendulum angle (\(\alpha\)) and arm angle (\(\theta\)).
    - Control input (\(u\)).
    - Reference tracking performance.
-
+  
+5. **View the comparitive results:**
+   The simulation will generate plots showing the pendulum angle and arm angle over time, along with the controller outputs and reference signals for both MPC and LQR.
+   ```matlab
+   run('plot_comparison_graphs.m');  % For the plots
+   ```
+   - The plots will be displayed automatically in MATLAB.
+   - The results can also be saved and analyzed for further comparison.
 ---
 
 ## Simulation Details
