@@ -61,6 +61,7 @@ cus_cost = zeros(num_steps, 1);    % Custom cost function values
 
 % Initialize state and MPC controller state
 x = x0;
+u = 0;
 mpc_state = mpcstate(mpc_obj);
 
 % Main simulation loop
