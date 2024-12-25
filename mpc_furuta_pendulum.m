@@ -124,12 +124,12 @@ legend('Actual \theta', 'Reference');
 title('Arm Angle \theta');
 grid on;
 
-subplot(3, 1, 3);
-stairs(time, U, 'k', 'LineWidth', 1.5);
+subplot(3,1,3);
+plot(time, cus_cost, 'k', 'LineWidth', 1.5);
+title('Optimal Cost');
 xlabel('Time (s)');
-ylabel('Control Input (u)');
-legend('Control Input');
-title('Control Input');
+ylabel('Cost');
+legend('Instantaneous cost');
 grid on;
 
 sgtitle('MPC Simulation Results for Furuta Pendulum');
