@@ -1,22 +1,3 @@
-% Define the state-space matrices for the system
-A = [0, 1, 0, 0;
-     37.377, -0.515, 0, 0.142;
-     0, 0, 0, 1;
-     -8.228, 0.113, 0, -0.173];  % State matrix
-
-B = [0;
-     -35.42;
-     0;
-     43.28];  % Input matrix
-
-C = eye(4);   % Output matrix
-D = zeros(4,1);  % Feedforward matrix
-
-% Define the weight matrices for the LQR controller
-Q = diag([200, 1, 10, 1]);  % State weighting matrix
-R = 50;                    % Control weighting scalar
-
-
 %% Define the state-space matrices for the Furuta pendulum system
 % State matrix (A), input matrix (B), output matrix (C), and feedforward matrix (D)
 
