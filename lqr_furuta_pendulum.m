@@ -114,7 +114,7 @@ disp(['Total cost J = ', num2str(total_cost)]);
 figure;
 
 % Plot the pendulum angle theta over time
-subplot(3,1,1);
+subplot(2,1,1);
 plot(t, -1*(x(:,2)), 'r', 'LineWidth', 1.5);
 xlabel('Time (s)');
 ylabel('\alpha (degrees)');
@@ -126,7 +126,7 @@ plot(t, rad2deg(refa), 'g--', 'LineWidth', 1.5);
 legend('Pendulum angle \alpha', 'reference');
 hold off;
 
-subplot(3,1,2);
+subplot(2,1,2);
 plot(t, x(:,1), 'k', 'LineWidth', 1.5);
 xlabel('Time (s)');
 ylabel('\theta (degrees)');
@@ -136,24 +136,6 @@ hold on;
 plot(t, rad2deg(ref), 'g--', 'LineWidth', 1.5);
 legend('Arm angle \theta', 'reference');
 hold off;
-
-% Plot the control input over time
-subplot(3,1,3);
-plot(t, u*2, 'k', 'LineWidth', 1.5);
-xlabel('Time (s)');
-ylabel('Control Input in Voltage u(t)');
-title('Control Input');
-legend('Control Input');
-grid on;
-
-% Plot the instantaneous cost over time
-% subplot(3,1,3);
-% plot(t, cost, 'k', 'LineWidth', 1.5);
-% xlabel('Time (s)');
-% ylabel('Cost');
-% title('Optimal Cost');
-% legend('Optimal cost');
-% grid on;
 
 % Add a super title to the figure
 sgtitle('LQR Simulation Results for Furuta Pendulum');
